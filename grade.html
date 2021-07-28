@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		const array=[65,95,80];
+		const G = grade();
+		console.log(G);
+		function average() {
+			var total = 0;
+		for(var i = 0; i < array.length; i++) {
+   		 total += array[i];
+		}
+		var avg = total / array.length;
+		return avg;
+		}
+
+		function grade() {
+			const avg=average();
+			if((avg>=1)&&(avg<=59)){
+				return 'F';
+			}
+			if((avg>=60)&&(avg<=69)){
+				return 'D';
+			}
+			if((avg>=70)&&(avg<=79)){
+				return 'C';
+			}
+			if((avg>=80)&&(avg<=89)){
+				return 'B';
+			}
+			if((avg>=90)&&(avg<=100)){
+				return 'A';
+			}
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
